@@ -1,0 +1,83 @@
+.main_div {
+    max-width: 512px;
+    background: #c8eaef;
+    border-radius: 10px;
+    margin: 48px auto;
+    padding: 24px
+}
+
+.main_div h1 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.main_div .input_div{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.main_div .input_div input{ 
+    display: flex;
+    padding: 10px;
+    flex-grow: 1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+}
+
+.main_div .input_div input:focus {
+    /* outline: none; */
+}
+
+.main_div .input_div button {
+    background: deepskyblue;
+    border: none;
+    padding: 10px;
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+.todo_list {
+    list-style: none;
+    padding-inline-start: 2px;
+}
+.todo_list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.todo_list button {
+    border: none;
+    background: inherit;
+    color: lightcoral;
+    font-weight: 600;
+}
+
+.todo_list span {
+    margin-left: 10px;
+}
+
+.todo_list span.completed {
+    text-decoration: line-through;
+}
+
+.todo_text {
+    text-align: center;
+    font-size: 16px;
+}
+
+.logoutBtn {
+    background : lightcoral;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.logout {
+    display: flex;
+    justify-content: center;
+}
+
