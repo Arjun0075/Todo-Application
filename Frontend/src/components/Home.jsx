@@ -9,7 +9,7 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   const [inputEle, setInputEle] = useState("");
   const [completedCount, setCompletedCount] = useState(0);
-  const [loggedInUser , setLoggedInUser] = useState({})
+  const [loggedInUser , setLoggedInUser] = useState(null)
   const navigate = useNavigate()
 
   useEffect(()=> {
@@ -26,6 +26,7 @@ const Home = () => {
   }, [])
 
   useEffect(() => {
+    if(!loggedInUser) return
     fetchTodo()
   } , [loggedInUser])
 
